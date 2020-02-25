@@ -23,6 +23,13 @@ namespace CdssJwtDisco.Controllers
             _logger = logger;
         }
 
+        [HttpPost]
+        [Route("Post")]
+        public void Post()
+        {
+            _logger.LogInformation("hi");
+        }
+
         [HttpGet]
         public IEnumerable<WeatherForecast> Get()
         {
